@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SGPA CAlCULATION</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+       <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+       <link href='https://fonts.googleapis.com/css?family=Condiment' rel='stylesheet'>
+       <link href='https://fonts.googleapis.com/css?family=Artifika' rel='stylesheet'>
+       <link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
+       <link href='https://fonts.googleapis.com/css?family=Bigshot One' rel='stylesheet'>
+       <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
+       <style>
+           #int,#ext,#cre,#sgpa,#result{
+               border-right: 3px solid gray;
+               border-top:2px solid gray;
+               border-radius: 6px;
+               box-shadow:inset 0px 0px 0px 2px  white;
+               padding: 10px;
+           }
+           #ear,#gra,#sgpa,#result{
+               border-left: 3px solid gray;
+               border-top:2px solid gray;
+                border-radius: 6px;
+               box-shadow:inset 0px 0px 0px 2px  white;
+               padding: 10px;
+           }
+           input{
+             font-weight: bold;
+             font-family: 'Bigshot One';
+             font-size: 30px;
+           }
+           button,input[type="reset"]{
+                font-family: 'Condiment';font-size: 30px;
+                padding: 10px;
+                letter-spacing: 2px;
+            }
+            h6{
+                font-family:'Alex Brush';
+                font-weight: 900;
+                font-size:25px;
+            }
+            h1{
+              font-family:'Artifika';  
+              font-weight: 900;
+            }
+       </style>
+    </head>
+    <body style="font-weight: bold;">  
+       <h1 style="color: crimson;text-align: center;">SGPA CALCULATION</h1><center>
+        
+        <form>
+            <div class="container-fluid form-group p-3"  >
+                <div class="row">
+                    <div class="col-sm-2"  id="int" style="background-color:aquamarine;margin-left:15px;margin-top:10px;box-sizing:border-box;width:200px;" >
+                            <h6>Internal marks</h4>
+                            <input type="number"  class="form-control" id="i1" max="50" min="0" placeholder="I1" style=" font-weight: bold;" ><br>
+                            <input type="number"  class="form-control" id="i2" max="50" min="0" placeholder="I2" style=" font-weight: bold;"><br>
+                            <input type="number"  class="form-control" id="i3" max="50" min="0" placeholder="I3" style=" font-weight: bold;"><br>
+                            <input type="number"  class="form-control" id="i4" max="50" min="0" placeholder="I4" style=" font-weight: bold;"><br>
+                            <input type="number"  class="form-control" id="i5" max="50" min="0" placeholder="I5" style=" font-weight: bold;"><br>
+                            <input type="number"  class="form-control" id="i6" max="50" min="0" placeholder="I6" style=" font-weight: bold;"><br>
+                            <input type="number"  class="form-control" id="i7" max="50" min="0" placeholder="I7" style=" font-weight: bold;"><br>
+                            <input type="number"  class="form-control" id="i8" max="50" min="0" placeholder="I8" style=" font-weight: bold;"><br>
+                    </div>
+                    <div class="col-sm-2" id="ext" style="background-color:aquamarine;margin-left:15px;margin-top:10px;box-sizing:border-box;width:200px;">
+                            <h6>Extrenal marks</h4>
+                            <input type="number"  class="form-control" id="e1" max="100" min="0" placeholder="E1" style=" font-weight: bold;" ><br>
+                            <input type="number"  class="form-control" id="e2" max="100" min="0" placeholder="E2" style=" font-weight: bold;"><br>
+                            <input type="number"  class="form-control" id="e3" max="100" min="0" placeholder="E3" style=" font-weight: bold;"><br>
+                            <input type="number"  class="form-control" id="e4" max="100" min="0" placeholder="E4" style=" font-weight: bold;"><br>
+                            <input type="number"  class="form-control" id="e5" max="100" min="0" placeholder="E5" style=" font-weight: bold;"><br>
+                            <input type="number"  class="form-control" id="e6" max="100" min="0" placeholder="E6" style=" font-weight: bold;"><br>
+                            <input type="number"  class="form-control" id="e7" max="100" min="0" placeholder="E7" style=" font-weight: bold;"><br>
+                            <input type="number"  class="form-control" id="e8" max="100" min="0" placeholder="E8" style=" font-weight: bold;"><br>
+                    </div>
+                    <div class="col-sm-2" id="cre" style="background-color:aquamarine;margin-left:10px;margin-top:10px;box-sizing:border-box;width:200px;">
+                            <h6>Credit</h4>
+                            <input type="number"  class="form-control" id="c1" placeholder="C1" style=" font-weight: bold;" ><br>
+                            <input type="number"  class="form-control" id="c2" placeholder="C2" style=" font-weight: bold;"><br>
+                            <input type="number"  class="form-control" id="c3" placeholder="C3" style=" font-weight: bold;"><br>
+                            <input type="number"  class="form-control" id="c4" placeholder="C4" style=" font-weight: bold;"><br>
+                            <input type="number"  class="form-control" id="c5" placeholder="C5" style=" font-weight: bold;"><br>
+                            <input type="number"  class="form-control" id="c6" placeholder="C6" style=" font-weight: bold;"><br>
+                            <input type="number"  class="form-control" id="c7" placeholder="C7" style=" font-weight: bold;"><br>
+                            <input type="number"  class="form-control" id="c8" placeholder="C8" style=" font-weight: bold;"><br>
+                    </div>
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-2" id="ear" style="background-color:rgba(167, 97, 233, 0.911);margin-left:10px;margin-top:10px;box-sizing:border-box;width:200px;">
+                        <h6>Earned Credits</h4>
+                            <input type="number" class="form-control" id="ea1" style=" font-weight: bold;width:40%;" readonly ><br>
+                            <input type="number"  class="form-control" id="ea2" style=" font-weight: bold;width:40%;" readonly><br>
+                            <input type="number"  class="form-control" id="ea3" style=" font-weight: bold;width:40%;" readonly><br>
+                            <input type="number"  class="form-control" id="ea4" style=" font-weight: bold;width:40%;" readonly><br>
+                            <input type="number"  class="form-control" id="ea5" style=" font-weight: bold;width:40%;"readonly><br>
+                            <input type="number"  class="form-control" id="ea6" style=" font-weight: bold;width:40%;"readonly><br>
+                            <input type="number"  class="form-control" id="ea7" style=" font-weight: bold;width:40%;"readonly><br>
+                            <input type="number"  class="form-control" id="ea8" style=" font-weight: bold;width:40%;"readonly><br>
+                
+                    </div>
+                    <div class="col-sm-2" id="gra" style="background-color:rgba(167, 97, 233, 0.911);margin-left:15px;margin-top:10px;box-sizing:border-box;width:200px;">
+                        <h6>Grade</h4>
+                            <input type="text" class="form-control" id="g1" style=" font-weight: bold; width: 50%;" readonly ><br>
+                            <input type="text" class="form-control" id="g2" style=" font-weight: bold;  width: 50%;" readonly><br>
+                            <input type="text" class="form-control" id="g3" style=" font-weight: bold;  width: 50%;" readonly><br>
+                            <input type="text" class="form-control" id="g4" style=" font-weight: bold;  width: 50%;" readonly><br>
+                            <input type="text" class="form-control" id="g5" style=" font-weight: bold; width: 50%;"readonly><br>
+                            <input type="text" class="form-control" id="g6" style=" font-weight: bold; width: 50%;"readonly><br>
+                            <input type="text" class="form-control" id="g7" style=" font-weight: bold; width: 50%;"readonly><br>
+                            <input type="text" class="form-control" id="g8" style=" font-weight: bold; width: 50%;"readonly><br>
+                
+                    </div>
+                </div>
+                <button type="button" class="btn btn-outline-success btn-lg" onclick="compute()" style="margin: 20px;" >SUBMIT</button>
+                <input type="reset" class="btn btn-outline-danger btn-lg" id="myInput" onclick="myFunction()"  style="font-size: 20px;"value="RESET">
+            <br>
+            <div class="row">
+            <div class="col-lg-1" id="sgpa" style="background-color: wheat;width:250px;height:150px;padding: 10px;margin:20px;">
+                <h4 style="margin-top:20px; font-family: 'Courgette';">SGPA</h4>
+                <h2 id="sg">0.0</h2>
+            </div><div class="col-lg-1"></div>
+            <div class="col-lg-1" id="result" style="background-color:wheat;width:250px;height:150px;padding: 10px;box-sizing: border-box;margin:20px;">
+                <h4 style="margin-top:20px;font-family: 'Courgette';">Result</h4>
+                <h2 id="re">R</h2>
+            </div>
+            </div>
+            </div>
+        </form>
+</center>
+
+        <script src="SGPA.js"></script>
+    </body>
+</html>
